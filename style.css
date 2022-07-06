@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.5em;
+}
+
+h2{
+    font-family: 'Fraunces', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    z-index: 10;
+}
+
+header svg{
+    fill: #fff;
+    margin: 1.5em;
+}
+
+header div svg{ transform: scale(1.3);}
+
+
+.list{
+    position: absolute;
+    z-index: 10;
+    background: #f5f5f5;
+    width: 80vw;
+    height: 50vh;
+    top: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    clip-path: polygon(100% 0%, 90% 10%, 0% 10%, 0% 100%, 100% 100%);
+    display: none;
+}
+
+.list.active{ 
+    display: flex;
+}
+
+.list div {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list a{
+    color: #000;
+    font-family: 'Barlow', sans-serif;
+    color: #777;
+}
+
+.list a:hover{
+    background: #fad400;
+    border-radius: 2em;
+    color: #111;
+    padding: .5em 2em;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.uno{
+    background: url(./images/mobile/image-header.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dos{
+    background: url(./images/mobile/image-transform.jpg);
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    background-size:cover;
+    background-position: center center;
+}
+.cuatro{
+    background: url(./images/mobile/image-stand-out.jpg);
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    background-size:cover;
+    background-position: center center;
+}
+.seis{
+    background: url(./images/mobile/image-graphic-design.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;   
+    text-align: center; 
+}
+.siete{
+    background: url(./images/mobile/image-photography.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;    
+    text-align: center;
+}
+
+main .uno h3{
+    margin: 0em 2em;
+    margin-bottom: 2em;
+    font-size: 2em;
+    text-align: center;
+    font-weight:900;
+    color: #fff;
+}
+
+.tres ,.cinco{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.tres h2 ,.cinco h2{
+    color: #222;
+    margin: 0em 2em;
+}
+
+.tres p ,.cinco p{
+    color: #888;
+    margin: 1.5em 1.2em;
+
+}
+
+.tres h3,.cinco h3{
+    color: #222;
+    font-size: .8em;
+}
+
+.tres h3 {
+    border-bottom:.2em solid #fad400;
+}
+
+.cinco h3 {
+    border-bottom:.2em solid #fe7867;
+}
+
+.seis p,.siete p {
+    margin: 1em;
+    margin-bottom: 2em;
+    opacity: .6;
+}
+
+.seis h2 ,.siete h2{
+    margin-bottom:1em ;
+    opacity: .6;
+}
+
+.ocho{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ocho img {
+    width: 18%;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+
+.ocho p{
+    margin:2em;
+    color: #666;
+}
+
+.ocho .gris {
+    margin:.3em;
+    color: #888;
+} 
+
+.ocho h3{
+    color: #888;
+    letter-spacing: .03em;
+}
+
+.ocho h2{
+    font-size: 1em;
+}
+
+.nueve{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nueve img{
+    border: none;
+    width: 50%;
+    height:50%;
+}
+
+footer{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background: #5bd4bc;
+}
+
+footer svg{
+    fill:#25564b;
+}
+
+footer div:nth-child(2){
+    display: flex;
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 18%;
+    justify-content: space-around;    
+}
+
+footer div:nth-child(2) a{
+    color: #25564b;
+}
+
+footer div:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
